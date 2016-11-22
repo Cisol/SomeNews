@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/newIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@mipmap/ic_launcher"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/newIcon"
+        >
+
+        <TextView
+            android:id="@+id/newTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/newTitleTxtSize"
+
+            />
+        <TextView
+            android:id="@+id/newTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/newTimeTxtSize"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

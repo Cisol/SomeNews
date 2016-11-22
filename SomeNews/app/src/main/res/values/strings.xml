@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">SomeNews</string>
+    <string name="header_text">桑木新闻</string>
 </resources>
