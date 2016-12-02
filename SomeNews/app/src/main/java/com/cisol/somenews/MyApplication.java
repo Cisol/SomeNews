@@ -2,6 +2,9 @@ package com.cisol.somenews;
 
 import android.app.Application;
 
+import com.android.volley.RequestQueue;
+import com.android.volley.toolbox.Volley;
+
 import org.xutils.BuildConfig;
 import org.xutils.x;
 
@@ -11,13 +14,15 @@ import org.xutils.x;
 
 public class MyApplication extends Application {
 
+    private static RequestQueue queues;
+
     @Override
     public void onCreate() {
-        super.onCreate();
-        //初始化XUtils
-        x.Ext.init(this);
-        //设置debug模式
-        x.Ext.setDebug(BuildConfig.DEBUG); // 是否输出debug日志, 开启debug会影响性能.
+        queues = Volley.newRequestQueue(getApplicationContext());
+    }
+
+    public static RequestQueue getQueues() {
+        return queues;
     }
 
 }

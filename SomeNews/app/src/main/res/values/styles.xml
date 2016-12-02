@@ -8,8 +8,8 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="newTitleTxtSize">16sp</style>
+    <style name="newTitleTxtSize">48sp</style>
 
-    <style name="newTimeTxtSize">16sp</style>
+    <style name="newTimeTxtSize">48sp</style>
 
 </resources>

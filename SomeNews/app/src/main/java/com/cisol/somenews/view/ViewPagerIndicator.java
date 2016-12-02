@@ -81,6 +81,9 @@ public class ViewPagerIndicator extends LinearLayout {
         mPaint.setPathEffect(new CornerPathEffect(3));
     }
 
+    /**
+     * 额外提供一个ViewPager的监听接口
+     */
     public interface OnPageChangeListener {
         public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels);
 

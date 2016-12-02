@@ -5,9 +5,9 @@
     >
 
     <ImageView
-        android:id="@+id/newIcon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/newsIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_alignParentLeft="true"
         android:src="@mipmap/ic_launcher"/>
 
@@ -16,18 +16,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
-        android:layout_toRightOf="@+id/newIcon"
+        android:layout_toRightOf="@+id/newsIcon"
         >
 
         <TextView
-            android:id="@+id/newTitle"
+            android:id="@+id/newsTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             style="@style/newTitleTxtSize"
 
             />
         <TextView
-            android:id="@+id/newTime"
+            android:id="@+id/newsTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             style="@style/newTimeTxtSize"
